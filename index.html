@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مانهوا ریدر | Manhwa Reader</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="https://manhwaclan.com/wp-content/uploads/favicon.png" type="image/png">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>مانهوا ریدر</h1>
+      <input type="text" id="search" placeholder="جستجو...">
+    </header>
+    <main id="grid"></main>
+  </div>
+
+  <div id="modal" class="hidden">
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="content">
+      <h2 id="title"></h2>
+      <button class="close-btn" onclick="closeModal()">X</button>
+      <select id="chapters" onchange="loadChapter()"></select>
+      <div class="nav">
+        <button onclick="prev()" id="prev" disabled>قبلی</button>
+        <span id="info">1 / 1</span>
+        <button onclick="next()" id="next" disabled>بعدی</button>
+      </div>
+      <div id="images"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
