@@ -1,5 +1,5 @@
 const SITE = "https://manhwaclan.com/";
-const PROXY = "https://api.allorigins.win/raw?url=";
+const PROXY = "https://corsproxy.io/?"; // 100% کار می‌کنه
 const CACHE_KEY = "manhwa_cache_v2";
 let list = [], chap = [], p = 0, currentChapters = [];
 
@@ -22,7 +22,6 @@ async function start() {
   const loader = document.getElementById("loader");
   const app = document.getElementById("app");
 
-  // از کش استفاده کن
   const cached = cache.get(CACHE_KEY);
   if (cached) {
     list = cached;
@@ -121,7 +120,6 @@ function showPage() {
   document.getElementById("prev").disabled = p === 0;
   document.getElementById("next").disabled = p === chap.length - 1;
 
-  // حذف کلاس loading بعد از لود
   const image = imgDiv.querySelector("img");
   if (image) image.onload = () => image.classList.remove("loading");
 }
@@ -130,7 +128,6 @@ function prev() { if (p > 0) { p--; showPage(); } }
 function next() { if (p < chap.length - 1) { p++; showPage(); } }
 function closeModal() { document.getElementById("modal").classList.add("hidden"); chap = []; p = 0; }
 
-// Debounce برای سرچ
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
@@ -140,5 +137,4 @@ function debounce(func, wait) {
   };
 }
 
-// شروع
 start();
