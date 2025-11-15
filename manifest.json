@@ -3,13 +3,10 @@
   "short_name": "مانهوا",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#111111",
+  "background_color": "#0f0f1e",
   "theme_color": "#00d4ff",
   "icons": [
-    {
-      "src": "https://manhwaclan.com/wp-content/uploads/favicon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
+    { "src": "https://manhwaclan.com/wp-content/uploads/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "https://manhwaclan.com/wp-content/uploads/favicon.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
