@@ -2,16 +2,18 @@
   {
     "t": "Solo Leveling",
     "l": "https://manhwaclan.com/manga/solo-leveling/",
-    "i": "https://manhwaclan.com/wp-content/uploads/WP-manga/data/manga_5f8e8e8e8e8e8/solo-leveling.jpg"
+    "i": "https://manhwaclan.com/wp-content/uploads/WP-manga/data/manga_5f8e8e8e8e8e8/solo-leveling.jpg",
+    "chapters": [
+      { "n": "چپتر 1", "u": "https://manhwaclan.com/manga/solo-leveling/chapter-1/" },
+      { "n": "چپتر 2", "u": "https://manhwaclan.com/manga/solo-leveling/chapter-2/" }
+    ]
   },
   {
     "t": "Tower of God",
     "l": "https://manhwaclan.com/manga/tower-of-god/",
-    "i": "https://manhwaclan.com/wp-content/uploads/WP-manga/data/manga_5f8e8e8e8e8e8/tower-of-god.jpg"
-  },
-  {
-    "t": "The Beginning After The End",
-    "l": "https://manhwaclan.com/manga/the-beginning-after-the-end/",
-    "i": "https://manhwaclan.com/wp-content/uploads/WP-manga/data/manga_5f8e8e8e8e8e8/tbate.jpg"
+    "i": "https://manhwaclan.com/wp-content/uploads/WP-manga/data/manga_5f8e8e8e8e8e8/tower-of-god.jpg",
+    "chapters": [
+      { "n": "چپتر 1", "u": "https://manhwaclan.com/manga/tower-of-god/chapter-1/" }
+    ]
   }
 ]
